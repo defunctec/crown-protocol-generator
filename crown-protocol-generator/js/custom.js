@@ -2,7 +2,7 @@ $(document).ready(function() {
 $('#submit_form1').click(function(e) {
     e.preventDefault();
 
-$('.hidden1').html('');
+$('.hidden').html('');
 
   var Username = $('#Username').val();
   var Email = $('#Email').val();
@@ -27,7 +27,7 @@ if (Username=="")
 {
   $("#Username").parent(".form-group").append("<span class='error_r'>Username Name is Required</span>");
     $(".error_r").fadeOut(10000);
-  $(".hidden1").show();
+  $(".hidden").show();
   return false;
 }
 if (!Username)
@@ -138,8 +138,8 @@ else {
       data: data,
 
       success: function(data) {
-        $(".hidden1").html(data);
-        $(".hidden1").show();
+        $(".hidden").html(data);
+        $(".hidden").show();
       },
       error: function() {
         console.log("Protocol generation failed at the .js level");
