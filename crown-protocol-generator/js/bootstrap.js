@@ -720,7 +720,7 @@
     _proto.nextWhenVisible = function nextWhenVisible() {
       // Don't call next when the page isn't visible
       // or the carousel or its parent isn't visible
-      if (!document.hidden && $(this._element).is(':visible') && $(this._element).css('visibility') !== 'hidden') {
+      if (!document.hidden1 && $(this._element).is(':visible') && $(this._element).css('visibility') !== 'hidden1') {
         this.next();
       }
     };
