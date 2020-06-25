@@ -2,9 +2,12 @@
     include_once $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php';
     include_once $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php';
     include_once $_SERVER['DOCUMENT_ROOT'] . '/wp-includes/wp-db.php';
+
     global $wpdb;
+
     // Check form input
     if(isset($_POST['Username']) && isset($_POST['Email']) && isset($_POST['NFTProto']) && isset($_POST['ProtoName']) && isset($_POST['ProtoOwnerAddress']) && isset($_POST['SelfSign']) && isset($_POST['TypeMime']) && isset($_POST['SchemaUri']) && isset($_POST['Transferable']) && isset($_POST['MetaEmbedded']) && isset($_POST['MetaSize'])){
+
     // If checks pass, then
     $username = $_POST['Username'];
     $email = $_POST['Email'];
@@ -17,9 +20,11 @@
     $transferable = $_POST['Transferable'];
     $metaembedded = $_POST['MetaEmbedded'];
     $metasize = $_POST['MetaSize'];
+
     // curl to private file
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL,"https://YOURWEBSITEURL/crown_de1/crown.php");
+
+    curl_setopt($ch, CURLOPT_URL,"https://WEBSITEURL/crown_de1/crown.php");
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS,$_POST);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

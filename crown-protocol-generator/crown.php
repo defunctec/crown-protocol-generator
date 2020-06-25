@@ -56,15 +56,15 @@ function registration_form1()
 echo'<div class="container">
 <div class="row">
 	<div class="col-md-12">
-		<div id="contact-form" class="crown-form">
-			<form id="form" action="../wp-content/plugins/crown-protocol-generator/ajaxform.php" method="post" name="form">
+		<div id="contact-form" class="crown-form1">
+			<form id="form1" action="../wp-content/plugins/crown-protocol-generator/ajaxform.php" method="post" name="form1">
 				<div class="form-group" style="display:none">
 					<label for="username">Username<span style="color:red;font-size: 15px;">*</span></label>
-					<input type="text" class="form-control" id="Username" value="YOURUSERNAME" name="Username" readonly required>
+					<input type="text" class="form-control" id="Username" value="ENTERUSERNAME" name="Username" readonly required>
 				</div>
 				<div class="form-group" style="display:none">
 					<label for="email">Email Address<span style="color:red;font-size: 15px;">*</span></label>
-					<input type="email" class="form-control" name="Email" value="YOUREMAIL" id="Email" readonly required>
+					<input type="email" class="form-control" name="Email" value="ENTEREMAIL" id="Email" readonly required>
 				</div>
 				<div class="form-group">
 					<label for="nftproto">Protocol name(Abbreviation)<span style="color:red;font-size: 15px;">*</span></label>
@@ -76,7 +76,7 @@ echo'<div class="container">
 				</div>
 				<div class="form-group" style="display:none">
 					<label for="protoowneraddress">Protocol owner address<span style="color:red;font-size: 15px;">*</span></label>
-					<input type="text" class="form-control" name="ProtoOwnerAddress" value="MUST-BE-VPS-CLIENT-CROWN-ADDRESS" placeholder="Your address" id="ProtoOwnerAddress" required>
+					<input type="text" class="form-control" name="ProtoOwnerAddress" value="MUST-BE-VPS-CLIENT-ADDRESS" placeholder="Your address" id="ProtoOwnerAddress" required>
 				</div>
 				<div class="form-group" style="display:none">
 					<label for="selfsign">selfsign <span style="color:red;font-size: 15px;">*</span></label>
@@ -104,11 +104,11 @@ echo'<div class="container">
 				</div>
 
 				<div class="form-group submit_btnn">
-					<input name="submitbtn" type="submit" class="btn btn-primary" value="Submit" id="submit_form1"/>
+					<input name="submitbtn1" type="submit" class="btn btn-primary" value="Submit Proto" id="submit_form1"/>
 					<a  class="btn btn-danger" href="../wp-content/plugins/crown-protocol-generator/response.php'.@$_GET['page_id'].'" id="submit_form1">Get All list</a>
 				</div>
 			</form>
-			<span class="hidden"></span>
+			<span class="hidden1"></span>
 			<img src="" id="loading-img" style="display:none">
 			<div class="response_msg"></div>
 			</div>

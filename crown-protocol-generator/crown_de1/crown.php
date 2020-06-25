@@ -1,5 +1,6 @@
 <?php
 	if(isset($_POST['Username']) && isset($_POST['Email']) && isset($_POST['NFTProto']) && isset($_POST['ProtoName']) && isset($_POST['ProtoOwnerAddress']) && isset($_POST['SelfSign']) && isset($_POST['TypeMime']) && isset($_POST['SchemaUri']) && isset($_POST['Transferable']) && isset($_POST['MetaEmbedded']) && isset($_POST['MetaSize'])){
+
 	// Post inputs
 	$username = $_POST['Username'];
 	$email = $_POST['Email'];
@@ -13,10 +14,11 @@
 	$metaembedded = $_POST['MetaEmbedded'];
 	$metasize = $_POST['MetaSize'];
 	// Connect to VPS (Crown client)
+
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
 	CURLOPT_PORT => "9341",
-	CURLOPT_URL => "http://RPCPASS:RPCUSER@VPSIP:9341",
+	CURLOPT_URL => "http://RPCUSER:RPCPASS@VPSIP:9341",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
@@ -35,6 +37,7 @@
 	"user: RPCUSER:RPCPASS"
 	),
 )); 
+
 // Response or error
 $response = curl_exec($curl);
 echo $response;

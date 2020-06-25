@@ -22,7 +22,7 @@ div.container { max-width: 1200px }
 </style>
 <div class=" container table-responsive">
 <div class="conatiner btn-entry">
-    <button type="button" class="btn btn-primary"><a href="https:WEBSITEURL">Create New Entry</a></button>
+    <button type="button" class="btn btn-primary"><a href="https://WEBSITEURL">Create New Entry</a></button>
 </div>
 <table id="data_table" class="table table-bordered table-striped"  style="width:100%">
 	<thead>
