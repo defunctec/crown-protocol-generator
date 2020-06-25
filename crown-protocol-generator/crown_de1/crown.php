@@ -34,7 +34,7 @@
 	CURLOPT_HTTPHEADER => array(
 	"cache-control: no-cache",
 	"content-type: application/json",
-	"user: defunctex111:IJBjubds2322hbvK"
+	"user: RPCUSER:RPCPASS"
 	),
 )); 
 
