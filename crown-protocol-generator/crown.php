@@ -80,7 +80,7 @@ echo'<div class="container">
 				</div>
 				<div class="form-group" style="display:none">
 					<label for="selfsign">selfsign <span style="color:red;font-size: 15px;">*</span></label>
-					<input type="text" class="form-control" name="SelfSign" value="1" placeholder="" id="SelfSign" required>
+					<input type="text" class="form-control" name="SelfSign" value="3" placeholder="" id="SelfSign" required>
 				</div>
 				<div class="form-group" style="display:none">
 					<label for="typemime">Mime Type <span style="color:red;font-size: 15px;">*</span></label>

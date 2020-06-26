@@ -20,3 +20,5 @@ Place the crown-protocol-generator folder inside wp-content/plugins
 Change all RPC details and website server info to your own.
 
 Use the shortcode [crw_registration1] to show the protocol generator.
+
+Note: nftRegSign is set to 3 (SignPayer) by default.
